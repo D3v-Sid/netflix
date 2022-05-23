@@ -16,6 +16,8 @@ export function App() {
 				))}
 			</Jumbotron.Container>
 			<Footer>
+				<Footer.Headline> Des questions ? Appelez le (+33) 0805-543-063 </Footer.Headline>
+
 				<Footer.Row>
 					<Footer.Column>
 						<Footer.Link href="#">FAQ</Footer.Link>
