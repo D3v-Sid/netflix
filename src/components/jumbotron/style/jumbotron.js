@@ -7,6 +7,7 @@ export const Inner = styled.div`
 	flex-direction: ${({ direction }) => direction};
 	color: #fff;
 	justify-content: space-between;
+	border-bottom: 8px solid #222;
 	align-items: center;
 	max-width: 1100px;
 	margin: auto;
@@ -20,7 +21,14 @@ export const Container = styled.div`
 	padding: 3rem;
 `;
 
-export const Pane = styled.div``;
+export const Pane = styled.div`
+	width: 50%;
+	@media (max-width: 1000px) {
+		width: 100%;
+		padding: 0 45px;
+		text-align: center;
+	}
+`;
 
 export const Image = styled.img`
 	max-width: 100%;
