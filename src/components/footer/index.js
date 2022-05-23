@@ -1,5 +1,16 @@
-import { Container } from "./style/footer";
+import { Container, Link, Column, Row } from "./style/footer";
 
 export default function Footer({ children, ...restProps }) {
-	return <Container />;
+	return <Container {...restProps}>{children} </Container>;
 }
+
+Footer.Link = function FooterLink({ children, ...restProps }) {
+	return <Link {...restProps}>{children} </Link>;
+};
+
+Footer.Column = function FooterColumn({ children, ...restProps }) {
+	return <Column {...restProps}> {children} </Column>;
+};
+Footer.Row = function FooterRow({ children, ...restProps }) {
+	return <Row {...restProps}> {children} </Row>;
+};

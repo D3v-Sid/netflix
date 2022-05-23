@@ -9,7 +9,7 @@ export const Inner = styled.div`
 	justify-content: space-between;
 	border-bottom: 8px solid #222;
 	align-items: center;
-	max-width: 1100px;
+	max-width: 100vw;
 	margin: auto;
 	width: 100%;
 	@media (max-width: 1000px) {
@@ -40,7 +40,7 @@ export const Title = styled.h1`
 	line-height: 1.1;
 	margin-bottom: 8px;
 	@media (max-width: 600px) {
-		font-size: 35px;
+		font-size: 1.625rem;
 	}
 `;
 export const SubTitle = styled.h2`
@@ -48,6 +48,6 @@ export const SubTitle = styled.h2`
 	font-weight: normal;
 	line-height: normal;
 	@media (max-width: 600px) {
-		font-size: 18px;
+		font-size: 1.125rem;
 	}
 `;
