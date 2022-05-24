@@ -1,9 +1,19 @@
-import { Jumbotron, Footer } from "./components";
+import { Jumbotron, Footer, Accordion } from "./components";
 import jumboData from "./fixtures/jumbo.json";
+import accordionData from "./fixtures/faqs.json";
 
 export function App() {
 	return (
 		<div className="App">
+			<Accordion>
+				<Accordion.Title>Foire aux questions</Accordion.Title>
+				{accordionData.map(item => (
+					<Accordion.Row key={item.id}>
+						<Accordion.Header>{item.header}</Accordion.Header>
+						<Accordion.Body>{item.body}</Accordion.Body>
+					</Accordion.Row>
+				))}
+			</Accordion>
 			<Jumbotron.Container>
 				{jumboData.map(item => (
 					<Jumbotron key={item.id} direction={item.direction}>
