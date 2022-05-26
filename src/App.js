@@ -1,19 +1,20 @@
-import { Jumbotron, Footer, Accordion } from "./components";
+import { Jumbotron, Footer, Accordion, Mail } from "./components";
 import jumboData from "./fixtures/jumbo.json";
 import accordionData from "./fixtures/faqs.json";
 
 export function App() {
 	return (
 		<div className="App">
-			<Accordion>
-				<Accordion.Title>Foire aux questions</Accordion.Title>
-				{accordionData.map(item => (
-					<Accordion.Row key={item.id}>
-						<Accordion.Header>{item.header}</Accordion.Header>
-						<Accordion.Body>{item.body}</Accordion.Body>
-					</Accordion.Row>
-				))}
-			</Accordion>
+			<Mail>
+				<Mail.Text>
+					Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou
+					réactiver votre abonnement.
+				</Mail.Text>
+				<Mail.Inner>
+					<Mail.Input placeholder={"Adresse e-mail"}></Mail.Input>
+					<Mail.Button> Commencer </Mail.Button>
+				</Mail.Inner>
+			</Mail>
 			<Jumbotron.Container>
 				{jumboData.map(item => (
 					<Jumbotron key={item.id} direction={item.direction}>
@@ -25,6 +26,15 @@ export function App() {
 					</Jumbotron>
 				))}
 			</Jumbotron.Container>
+			<Accordion>
+				<Accordion.Title>Foire aux questions</Accordion.Title>
+				{accordionData.map(item => (
+					<Accordion.Row key={item.id}>
+						<Accordion.Header>{item.header}</Accordion.Header>
+						<Accordion.Body>{item.body}</Accordion.Body>
+					</Accordion.Row>
+				))}
+			</Accordion>
 			<Footer>
 				<Footer.Headline> Des questions ? Appelez le (+33) 0805-543-063 </Footer.Headline>
 

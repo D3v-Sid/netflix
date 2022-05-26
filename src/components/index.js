@@ -1,4 +1,5 @@
 import Jumbotron from "./jumbotron";
 import Footer from "./footer";
 import Accordion from "./accordion";
-export { Jumbotron, Footer, Accordion };
+import Mail from "./mail";
+export { Jumbotron, Footer, Accordion, Mail };

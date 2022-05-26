@@ -10,6 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
+	text-align: center;
 	font-size: 3.125rem;
 	line-height: 1.1;
 	margin-bottom: 0.5rem;
@@ -26,17 +27,30 @@ export const Row = styled.div`
 	cursor: pointer;
 `;
 
-export const Header = styled.h3`
+export const Header = styled.div`
 	font-size: 26px;
 	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+
+	img {
+		filter: brightness(0) invert(1);
+		height: 18px;
+		width: 18px;
+	}
 `;
 
 export const Body = styled.div`
+	padding: 1rem;
 	font-weight: normal;
 	line-height: normal;
+	font-size: 23px;
 	background: #303030;
 	white-space: pre-wrap;
 	user-select: none;
+	text-align: justify;
+
 	overflow: hidden;
 	&.closed {
 		max-height: 0;
