@@ -28,9 +28,11 @@ export const Input = styled.input`
 	width: 100%;
 	max-width: 450px;
 	height: 60px;
+	padding: 0.5rem;
 	background: #fff;
 	border-radius: 2px;
-	border: none;
+	border: 0;
+	outline: none;
 	@media (max-width: 1000px) {
 		height: 40px;
 	}
@@ -45,7 +47,16 @@ export const Button = styled.button`
 	font-size: 1.625rem;
 	padding: 0 26px;
 	height: 60px;
-	max-width: 150px;
+
+	img {
+		margin-left: 10px;
+		filter: brightness(0) invert(1);
+		width: 18px;
+		@media (max-width: 1000px) {
+			width: 12px;
+		}
+	}
+
 	cursor: pointer;
 	&:hover {
 		background: #f40612;
@@ -67,7 +78,8 @@ export const Text = styled.p`
 	margin: 1rem;
 	padding: 1rem 5rem;
 	@media (max-width: 1000px) {
+		padding: 1rem;
 		font-size: 16px;
-		line-height: 22px;
+		line-height: 20px;
 	} ;
 `;

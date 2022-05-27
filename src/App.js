@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { Jumbotron, Footer, Accordion, Mail } from "./components";
 import jumboData from "./fixtures/jumbo.json";
 import accordionData from "./fixtures/faqs.json";
+import * as ROUTES from "./constants/routes";
 
 export function App() {
 	return (
@@ -11,7 +13,7 @@ export function App() {
 					réactiver votre abonnement.
 				</Mail.Text>
 				<Mail.Inner>
-					<Mail.Input placeholder={"Adresse e-mail"}></Mail.Input>
+					<Mail.Input placeholder={"Adresse e-mail"} type={"email"}></Mail.Input>
 					<Mail.Button> Commencer </Mail.Button>
 				</Mail.Inner>
 			</Mail>
@@ -35,6 +37,16 @@ export function App() {
 					</Accordion.Row>
 				))}
 			</Accordion>
+			<Mail>
+				<Mail.Text>
+					Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou
+					réactiver votre abonnement.
+				</Mail.Text>
+				<Mail.Inner>
+					<Mail.Input placeholder={"Adresse e-mail"} type={"email"}></Mail.Input>
+					<Mail.Button> Commencer </Mail.Button>
+				</Mail.Inner>
+			</Mail>
 			<Footer>
 				<Footer.Headline> Des questions ? Appelez le (+33) 0805-543-063 </Footer.Headline>
 

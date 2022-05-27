@@ -13,7 +13,11 @@ Mail.Input = function MailInput({ children, ...restProps }) {
 };
 
 Mail.Button = function MailButton({ children, ...restProps }) {
-	return <Button {...restProps}> {children} </Button>;
+	return (
+		<Button {...restProps}>
+			{children} <img src="/images/icons/chevron-right.png" alt="Try Now" />
+		</Button>
+	);
 };
 
 Mail.Text = function MailText({ children, ...restProps }) {
