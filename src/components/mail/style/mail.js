@@ -15,6 +15,7 @@ export const Container = styled.div`
 export const Inner = styled.div`
 	width: 100%;
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	@media (max-width: 1000px) {
 		flex-direction: column;
@@ -23,10 +24,9 @@ export const Inner = styled.div`
 
 export const Input = styled.input`
 	color: #8c8c8c;
-	padding: 10px;
 	font-size: 14px;
-	max-width: 450px;
 	width: 100%;
+	max-width: 450px;
 	height: 60px;
 	background: #fff;
 	border-radius: 2px;
@@ -37,7 +37,6 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-	margin: auto;
 	border-radius: 2px;
 	border: none;
 	color: #fff;
@@ -46,6 +45,7 @@ export const Button = styled.button`
 	font-size: 1.625rem;
 	padding: 0 26px;
 	height: 60px;
+	max-width: 150px;
 	cursor: pointer;
 	&:hover {
 		background: #f40612;
@@ -67,6 +67,7 @@ export const Text = styled.p`
 	margin: 1rem;
 	padding: 1rem 5rem;
 	@media (max-width: 1000px) {
-		padding: 1rem;
+		font-size: 16px;
+		line-height: 22px;
 	} ;
 `;
