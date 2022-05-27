@@ -2,7 +2,7 @@ import { Jumbotron, Footer, Accordion, Mail } from "../components";
 import jumboData from "../fixtures/jumbo.json";
 import accordionData from "../fixtures/faqs.json";
 
-export function Home() {
+export default function Home() {
 	return (
 		<div className="Home">
 			<Mail>
