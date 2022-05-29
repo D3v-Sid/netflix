@@ -1,13 +1,13 @@
-import { Container, Inner, Text } from "./style/feature";
+import { Container, Title, Subtitle } from "./style/feature";
 
 export default function Feature({ children, ...restProps }) {
 	return <Container {...restProps}> {children} </Container>;
 }
 
-Feature.Inner = function MailInner({ children, ...restProps }) {
-	return <Inner {...restProps}> {children} </Inner>;
+Feature.Title = function FeatureTitle({ children, ...restProps }) {
+	return <Title {...restProps}> {children} </Title>;
 };
 
-Feature.Text = function MailText({ children, ...restProps }) {
-	return <Text {...restProps}> {children} </Text>;
+Feature.Subtitle = function FeatureSubtitle({ children, ...restProps }) {
+	return <Subtitle {...restProps}> {children} </Subtitle>;
 };

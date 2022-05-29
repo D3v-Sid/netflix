@@ -1,4 +1,4 @@
-import { Jumbotron, Footer, Accordion, Mail } from "../components";
+import { Jumbotron, Footer, Accordion, Mail, Feature } from "../components";
 import HeaderContainer from "../container/header";
 import jumboData from "../fixtures/jumbo.json";
 import accordionData from "../fixtures/faqs.json";
@@ -7,6 +7,10 @@ export default function Home() {
 	return (
 		<div className="Home">
 			<HeaderContainer>
+				<Feature>
+					<Feature.Title> Films, séries TV et bien plus en illimité. </Feature.Title>
+					<Feature.Subtitle>Où que vous soyez. Annulez à tout moment.</Feature.Subtitle>
+				</Feature>
 				<Mail>
 					<Mail.Text>
 						Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner
