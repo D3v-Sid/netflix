@@ -1,3 +1,10 @@
+import HeaderContainer from "../container/header";
+
 export default function SignIn() {
-	return <h1>SignIn</h1>;
+	return (
+		<>
+			<HeaderContainer />
+			<h1>SignIN</h1>
+		</>
+	);
 }

@@ -1,24 +1,24 @@
-import { Jumbotron, Footer, Accordion, Mail, Header } from "../components";
+import { Jumbotron, Footer, Accordion, Mail } from "../components";
+import HeaderContainer from "../container/header";
 import jumboData from "../fixtures/jumbo.json";
 import accordionData from "../fixtures/faqs.json";
 
 export default function Home() {
 	return (
 		<div className="Home">
-			<Header>
-				<Header.Logo src="/images/misc/logo.svg" alt="logo" />
-				<Header.Button>S'identifier</Header.Button>
-			</Header>
-			<Mail>
-				<Mail.Text>
-					Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou
-					réactiver votre abonnement.
-				</Mail.Text>
-				<Mail.Inner>
-					<Mail.Input placeholder={"Adresse e-mail"} type={"email"}></Mail.Input>
-					<Mail.Button> Commencer </Mail.Button>
-				</Mail.Inner>
-			</Mail>
+			<HeaderContainer>
+				<Mail>
+					<Mail.Text>
+						Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner
+						ou réactiver votre abonnement.
+					</Mail.Text>
+					<Mail.Inner>
+						<Mail.Input placeholder={"Adresse e-mail"} type={"email"}></Mail.Input>
+						<Mail.Button> Commencer </Mail.Button>
+					</Mail.Inner>
+				</Mail>
+			</HeaderContainer>
+
 			<Jumbotron.Container>
 				{jumboData.map(item => (
 					<Jumbotron key={item.id} direction={item.direction}>
